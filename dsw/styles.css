@@ -4,9 +4,17 @@ body{
 }
 
 .container{
-    display:flex ; /*hace por defecto flex-direction: row;*/
-    height: 100vh ;
+    display:flex; /*hace por defecto flex-direction: row;*/
+    height: 100vh;
+    flex-direction: column;
 }
+
+@media (min-width: 768px){ /*Se aplica esto para los dispositivos de ancho minimo 768 px llamado "media query"*/
+    .container{
+        flex-direction: row;
+    }
+}
+
 .container-left{
     width: 20%;
     background-color: grey;
